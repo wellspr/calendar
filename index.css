@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    min-height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-heading {
+    width: 100vw;
+    text-align: center;
+}
+
+.today {
+    text-align: center;
+}
+
+.currentDate {
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.currentMonth {
+    min-width: 10rem;
+    text-align: center;
+}
+
+.currentMonthSelect {
+    background-color: transparent;
+    border: none;
+    font-size: 1.8rem;
+    width: 10rem;
+    text-align: center;
+}
+
+.currentYear, .currentYearInput {
+    width: 6rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    flex-grow: 1;
+    padding-top: 2rem;
+}
+
+.calendar-box {
+    border: 1px solid darkslateblue;
+    width: 90vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar-header {
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto;
+    gap: .4rem;
+    height: 3rem;
+
+    margin: .4rem .4rem 0;
+}
+
+.weekday-cell {
+    height: 100%;
+    flex-grow: 1;
+    background-color: aquamarine;
+    font-size: 1.6rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar-body {
+    background-color: bisque;
+    margin: .4rem;
+
+    flex-grow: 1;
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: .4rem;
+}
+
+.day-cell {
+    background-color: cadetblue;
+    color: aliceblue;
+    font-size: 1.6rem;
+    height: 10vh;
+    padding: .4rem;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    appearance: textfield;
+  -moz-appearance: textfield;
+}

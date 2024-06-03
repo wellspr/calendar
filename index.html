@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <title>Calendário</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1 class="header-heading">Calendário</h1>
+                <div id="today" class="today"></div>
+                <div id="currentDate" class="currentDate">
+                    <div class="wrapper">
+                        <button id="month-down">&LeftTriangle;</button>
+                        <div id="currentMonth" class="currentMonth"></div>
+                        <select id="currentMonthSelect" class="currentMonthSelect hidden" type="text"></select>
+                        <button id="month-up">&RightTriangle;</button>
+                    </div>
+                    <div class="wrapper">
+                        <button id="year-down">&LeftTriangle;</button>
+                        <div id="currentYear" class="currentYear"></div>
+                        <input type="number" id="currentYearInput" class="currentYearInput hidden">
+                        <button id="year-up">&RightTriangle;</button>
+                    </div>
+                    <div class="wrapper">
+                        <button id="reset-button">Restaurar</button>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <div class="calendar-box">
+                    <div id="calendar-header" class="calendar-header"></div>
+                    <div id="calendar-body" class="calendar-body"></div>
+                </div>
+            </main>
+            <footer class="footer">&copy; 2024 - Made by Paulo.</footer>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
