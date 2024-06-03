@@ -214,6 +214,10 @@ function drawCurrentMonth(date) {
     for (let i = firstWeekday; i < calendarSpan; i++) {
         day++;
         dayCells[i].innerText = day;
+
+        if (day === currentDate.getDate()) {
+            dayCells[i].classList.add("current-day");
+        }
     };
 }
 
@@ -234,6 +238,7 @@ function generateCells(calendarSpan) {
     };
 }
 
+/* https://www.mathsisfun.com/leap-years.html */
 function isLeapYear(currentYear) {
     let isLeap = false;
 

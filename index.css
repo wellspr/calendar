@@ -134,7 +134,11 @@ select {
     color: aliceblue;
     font-size: 1.6rem;
     height: 10vh;
-    padding: .4rem;
+    padding: .6rem;
+}
+
+.current-day {
+    background-color: darkcyan;
 }
 
 button {
